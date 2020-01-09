@@ -1,0 +1,27 @@
+/* pages/mine/mine.wxss */
+view {
+  /* 公式：750rpx*px的值/屏宽 */
+  font-size: calc(750rpx*20/320);
+  color: rgb(102, 255, 0);
+}
+
+/* 微信只支持 相对路径 */
+text {
+  color: #2aa53f;
+}
+
+text {
+  font-size: calc(750rpx*30/320);
+}
+
+.h-class {
+  color: #2aa53f;
+}
+
+/* 计算
+swiper的宽度/高度=原图的宽度/高度
+swiper的高度=swiper宽度*原图高度/原图宽度 */
+swiper ,swiper image {
+  width: 100vw;
+  height: calc(750rpx*352/1125);
+}

@@ -1,0 +1,31 @@
+<!-- pages/img/img.wxml -->
+<view>微信小程序的一些基本运用</view>
+<view>{{msg}}</view>
+<view>{{person.name}}</view>
+<view>{{person.age}}</view>
+<view>{{person.height}}</view>
+<checkbox checked="{{isChecked}}">hds</checkbox>
+<view>
+  <text>计算结果：{{1+1}}</text>
+  <text>计算结果：{{'1'+'2'}}</text>
+  <text>计算结果：{{11%2===0?"偶数":"奇数"}}</text>
+</view>
+<view>
+  <view wx:for="{{names}}" wx:key="*this">索引：{{index}}---值：{{item}}</view>
+</view>
+<view>
+  <view>对象循环</view>
+  <block wx:for="{{person}}" wx:for-index="key" wx:for-item="value" wx:key="id">
+    属性：{{key}}----值：{{value}}
+  </block>
+</view>
+<view>
+  <view wx:for="{{persons}}" wx:for-item="person" wx:key="index">
+    <view wx:for="{{person}}" wx:for-index="key" wx:for-item="value" wx:key="id">
+      <view wx:if="{{key=='tabel'}}">
+        <view wx:for="{{value}}" wx:key="*this">{{item}}</view>
+      </view>
+      <view wx:else>{{key}}:{{value}}</view>
+    </view>
+  </view>
+</view>

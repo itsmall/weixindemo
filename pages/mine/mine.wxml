@@ -1,0 +1,36 @@
+<!-- pages/mine/mine.wxml -->
+
+<view>
+  <swiper autoplay circular 
+  indicator-dots indicator-color="red" indicator-active-color="rgb(255, 251, 0)"
+  interval="3000">
+  <swiper-item class="" item-id="">
+    <image src="https://gw.alicdn.com/imgextra/i4/190/O1CN01E63cXp1DH3ppeapaZ_!!190-0-lubanu.jpg" mode="widthFix" lazy-load="false" />
+  </swiper-item>
+  <swiper-item class="" item-id="">
+    <image src="https://gw.alicdn.com/imgextra/i2/193/O1CN01Rq6rcD1DIR1PVr3lR_!!193-0-lubanu.jpg" mode="widthFix" lazy-load="false" />
+  </swiper-item>
+  <swiper-item class="" item-id="">
+    <image src="https://gw.alicdn.com/imgextra/i1/149/O1CN01wk3SRK1CyHax8Ab0I_!!149-0-lubanu.jpg" mode="widthFix" lazy-load="false" />
+  </swiper-item>
+</swiper>
+</view>
+
+<navigator target="" url="" 
+hover-class="navigator-hover" 
+open-type="navigate">
+  nihao 
+</navigator>
+  
+  
+<input type="text" bindinput="handleInput" />
+<view>
+  <button bindtap="handletap" data-operation="{{1}}">+</button>
+  <button bindtap="handletap" data-operation="{{-1}}">-</button>
+</view>
+<view>{{num}}</view>
+<text selectable="{{true}}" decode="{{true}}">hjfdhj &nbsp;ghm</text>
+<view hover-class="h-class">点我试试</view>
+<image class="" src="https://ae01.alicdn.com/kf/U508c134088c949b2be08a0c132cb382dr.png" mode="aspectFit|aspectFill|widthFix" lazy-load="true" />
+
+

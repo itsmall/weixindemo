@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/demo3/demo3",
+    "pages/demo2/demo2",
+    "pages/demo1/demo1",
+    "pages/mine/mine",
+    "pages/img/img",
+    "pages/index/index",
+    "pages/search/search",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true,
+    "pageOrientation": "auto"
+  },
+  "tabBar": {
+    "list": [{
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "icon/logo.png",
+        "selectedIconPath": "icon/logo.png"
+      },
+      {
+        "pagePath": "pages/img/img",
+        "text": "图片",
+        "iconPath": "icon/logo.png",
+        "selectedIconPath": "icon/logo.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "icon/logo.png",
+        "selectedIconPath": "icon/logo.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "搜索",
+        "iconPath": "icon/logo.png",
+        "selectedIconPath": "icon/logo.png"
+      },
+      {
+        "pagePath": "pages/demo3/demo3",
+        "text": "demo",
+        "iconPath": "icon/logo.png",
+        "selectedIconPath": "icon/logo.png"
+      }
+    ],
+    "color": "#0094ff",
+    "selectedColor": "#ff9400"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

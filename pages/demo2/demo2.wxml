@@ -1,0 +1,8 @@
+<!-- pages/demo2/demo2.wxml -->
+<Tabs titles="{{titles}}" binditemChange="handleItemChange">
+  <block wx:for="{{titles}}" wx:key="id">
+    <view wx:if="{{item.isActive}}">
+      {{item.name}}
+    </view>
+  </block>
+</Tabs>

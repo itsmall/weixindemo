@@ -1,0 +1,40 @@
+<!-- pages/demo1/demo1.wxml -->
+<button>默认</button>
+<button size="mini">mini</button>
+<button type="primary">type</button>
+<button type="warn">type</button>
+<button plain="{{true}}">plain</button>
+<button loading="{{true}}">loading</button>
+<view>open-type</view>
+<button open-type="contact">share</button>
+<button open-type="share">contact</button>
+<button bindgetphonenumber="getPhoneNumber" open-type="getPhoneNumber">getPhoneNumber</button>
+<button bindgetuserinfo="getUserInfo" open-type="getUserInfo">getUserInfo</button>
+<button app-parameter="wechat" binderror="launchAppError" open-type="launchApp">launchApp</button>
+<button open-type="openSetting">openSetting</button>
+<button open-type="feedback">feedback</button>
+<!-- success
+success_no_circle
+info
+warn
+waiting
+cancel
+download
+search
+clear -->
+<icon class="" type="info" size="23" color=""></icon>
+<radio-group bindchange="radioClick">
+  <radio value="MAN">MAN</radio>
+  <radio value="WOMAN">WOMAN</radio>
+</radio-group>
+<view>
+  你现在的选择是:
+  <text>{{gender}}</text>
+</view>
+<checkbox-group bindchange="checkClick">
+  <checkbox wx:for="{{fruit}}" wx:key="id" value="{{item.value}}">{{item.name}}</checkbox>
+</checkbox-group>
+<view>
+  你现在选中的fruit:
+  <text>{{checkList}}</text>
+</view>
